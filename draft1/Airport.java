@@ -18,8 +18,7 @@ public class Airport {
 //        allFlightVehicle.setAircrafts((List<Aircraft>) aircraft2);
 //        allFlightVehicle.setAircrafts((List<Aircraft>) aircraft3);
 
-
-
+        //!
 
 //for(ArrayList i : aircrafts){
 //    System.out.println(i);
