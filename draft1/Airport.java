@@ -35,7 +35,7 @@ public class Airport {
         allFlightVehicle.getAircrafts().add(aircraft);
     }
 
-    //method to add gelicopter into ArrayList<Lesson2.task.Helicopter>
+    //method to add gelicopter into ArrayList<Helicopter>
 
     public static void addHelicopter(String name, String country, int flyDistance, int firstFlyght) {
         Helicopter helicopter = new Helicopter(name, country, flyDistance, firstFlyght);
@@ -43,7 +43,7 @@ public class Airport {
         allFlightVehicle.getHelicopters().add(helicopter);
     }
 
-    //method to add quadcopter into ArrayList<Lesson2.task.Quadcopter>
+    //method to add quadcopter into ArrayList<Quadcopter>
 
     public static void addQuadcopter(String name, String country, int flyDistance, int firstFlyght) {
         Quadcopter quadcopter = new Quadcopter(name, country, flyDistance, firstFlyght);
