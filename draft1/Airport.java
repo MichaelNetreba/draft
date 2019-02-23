@@ -14,17 +14,10 @@ public class Airport {
 
         AllFlightVehicle allFlightVehicle = new AllFlightVehicle();
 
-//        allFlightVehicle.setAircrafts((List<Aircraft>) aircraft1);
-//        allFlightVehicle.setAircrafts((List<Aircraft>) aircraft2);
-//        allFlightVehicle.setAircrafts((List<Aircraft>) aircraft3);
+        allFlightVehicle.setAircrafts(aircraft1);
+        allFlightVehicle.setAircrafts(aircraft2);
+        allFlightVehicle.setAircrafts(aircraft3);
 
-        //!
-
-//for(ArrayList i : aircrafts){
-//    System.out.println(i);
-//}
-
-        System.out.println(aircraft1);
 
         Iterator iterator = allFlightVehicle.getAircrafts().iterator();
         while (iterator.hasNext()) {
@@ -33,11 +26,6 @@ public class Airport {
         }
     }
 
-        /*
-        for (Aircraft item : aircrafts){
-            System.out.println(item);}
-    }
-*/
 
     // method to add aircraft into ArrayList<Aircraft>
 

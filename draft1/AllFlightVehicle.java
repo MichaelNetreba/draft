@@ -17,8 +17,8 @@ public class AllFlightVehicle {
     return aircrafts;
   }
 
-  public void setAircrafts(List<Aircraft> aircrafts) {
-    this.aircrafts = aircrafts;
+  public void setAircrafts(Aircraft aircraft) {
+    this.aircrafts.add(aircraft);
   }
 
   public List<Helicopter> getHelicopters() {
