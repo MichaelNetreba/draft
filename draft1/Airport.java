@@ -1,6 +1,7 @@
 package draft1;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
@@ -32,7 +33,7 @@ public class Airport {
     public static void addAircraft(String name, String country, int flyDistance, int firstFlyght) {
         Aircraft aircraft = new Aircraft(name, country, flyDistance, firstFlyght);
         AllFlightVehicle allFlightVehicle = new AllFlightVehicle();
-        allFlightVehicle.getAircrafts().add(aircraft);
+        allFlightVehicle.setAircrafts(aircraft);
     }
 
     //method to add gelicopter into ArrayList<Helicopter>
@@ -40,7 +41,7 @@ public class Airport {
     public static void addHelicopter(String name, String country, int flyDistance, int firstFlyght) {
         Helicopter helicopter = new Helicopter(name, country, flyDistance, firstFlyght);
         AllFlightVehicle allFlightVehicle = new AllFlightVehicle();
-        allFlightVehicle.getHelicopters().add(helicopter);
+        allFlightVehicle.setHelicopters(helicopter);
     }
 
     //method to add quadcopter into ArrayList<Quadcopter>
@@ -48,7 +49,18 @@ public class Airport {
     public static void addQuadcopter(String name, String country, int flyDistance, int firstFlyght) {
         Quadcopter quadcopter = new Quadcopter(name, country, flyDistance, firstFlyght);
         AllFlightVehicle allFlightVehicle = new AllFlightVehicle();
-        allFlightVehicle.getQuadcopters().add(quadcopter);
+        allFlightVehicle.setQuadcopters(quadcopter);
     }
     // sort method will be here byDistance
+    public static void sortAircraftsByDistance(){
+      AllFlightVehicle allFlightVehicle = new AllFlightVehicle();
+      allFlightVehicle.getAircrafts().sort(Comparator.comparing(Aircraft::getFlyDistance));
+    }
+
+    public static void sortHelicopterByDistance(){
+    }
+    public static void sortQuadcopterByDistance(){
+    }
+
+
 }

@@ -17,6 +17,15 @@ public abstract class FlightVehicle {
     this.firstFlyght = firstFlyght;
   }
 
+  public int getFlyDistance() {
+    return flyDistance;
+  }
+
+  //getter for flyDistance field
+  public void setFlyDistance(int flyDistance) {
+    this.flyDistance = flyDistance;
+  }
+
   public abstract void fly();
 
   public abstract void carryWeight();
