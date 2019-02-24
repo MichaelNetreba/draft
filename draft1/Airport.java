@@ -19,6 +19,7 @@ public class Airport {
         allFlightVehicle.setAircrafts(aircraft2);
         allFlightVehicle.setAircrafts(aircraft3);
 
+Airport.sortAircraftsByDistance();
 
         Iterator iterator = allFlightVehicle.getAircrafts().iterator();
         while (iterator.hasNext()) {
